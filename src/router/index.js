@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '@/views/Home.vue'
+import building from '@/views/building.vue'
 
 import NotFound from '@/components/NotFound.vue'
 
@@ -20,6 +21,11 @@ const routes = [
       auth: false,
     },
   },
+  {
+    path: '/building',
+    name: 'building',
+    component: building,
+  }
 ]
 
 const router = new VueRouter({
