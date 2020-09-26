@@ -1,16 +1,17 @@
 <template>
-	<div id="app">
+  <div class="home-wrapper d-flex justify-content-center">
     <div class="home-background"></div>
     <div class="home d-flex">
-      <b-container class="d-flex align-items-center justify-content-center flex-column">
-        <b-card class="text-center"
+      <b-container
+        
+      >
+        <b-card
+          class="text-center"
           bg-variant="light"
           text-variant="black"
           title="Уважаемые собственники помещений!"
         >
-       
           <div>
-             
             <b-card-text>
               Приглашаем Вас принять участие в общем собрании собственников
               помещений в форме очно-заочного голосования (совместного
@@ -22,8 +23,12 @@
             </b-card-text>
           </div>
           <div class="mt-4 mx-auto text-center">
-            <b-button href="#" variant="primary" to="/building">Корпус 1</b-button>
-            <b-button href="#" variant="primary" class="mx-1">Корпус 2</b-button>
+            <b-button href="#" variant="primary" to="/building"
+              >Корпус 1</b-button
+            >
+            <b-button href="#" variant="primary" class="mx-1"
+              >Корпус 2</b-button
+            >
             <b-button href="#" variant="primary">Корпус 3</b-button>
           </div>
         </b-card>
@@ -34,14 +39,18 @@
 
 <script>
 export default {
-	name: "Home",
+  name: "Home",
 };
 </script>
 
 <style lang="scss">
-#Home {
-	img {
-		max-width: 400px;
-	}
+.home-wrapper {
+  background-image: url("../assets/main_image.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  
 }
 </style>

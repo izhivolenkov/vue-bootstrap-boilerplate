@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<div class="container d-flex justify-content-center align-items-center">
+		<div class="">
 			<router-view></router-view>
 		</div>
 	</div>
@@ -15,8 +15,5 @@
   color: #2c3e50;
   min-height: 100vh;
 
-	.container {
-		min-height: 100vh;
-	}
 }
 </style>
